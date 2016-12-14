@@ -1,0 +1,53 @@
+h1{
+	font-family: 'Trirong', serif;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 10px;
+	color: #782A09;
+}
+
+.image-sizer{
+height:300px;
+padding:10px;
+}
+
+.color-setter{
+	background-color:#D1D9C0;
+}
+
+md-input-container.md-block{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.full-movie-info-boxResizer{
+	margin-right: 150px;
+	margin-left: 150px;
+	padding: 50px;
+}
+
+.full-movie-info-innerBox{
+	padding: 30px 50px;
+}
+
+.full-movie-info-innerBox img{
+	height:300px;
+    width: 350px;
+}
+.description-color{
+	background-color: #E6E0E0;
+	padding: 1px 20px;
+	padding-bottom: 20px;
+	margin-top: 10px;
+
+}
+
+.icon-setter {
+	margin-top: 4px;
+}
+.rating-setter {
+	margin-bottom: 4px;
+}
+.button-resizer {
+	width: 400px;
+}

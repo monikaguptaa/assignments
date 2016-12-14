@@ -1,0 +1,154 @@
+body{
+	
+}
+
+.logo h1{
+background-image: url('../img/Blood_connect1.png');
+background-repeat: no-repeat;
+height: 60px;
+margin: 0px;
+text-indent: 80px;
+color: #8B0000;
+padding-top: 10px;
+}
+
+h2{
+	font-family: sans-serif;
+	text-align: center;
+	text-transform: unset;
+	padding: 15px 0px;
+	} 
+
+.banner h2{
+	letter-spacing: 1px;
+	font-size: 25px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.head{
+	background-color: #DCDCDC;
+    margin-left: 0 px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+.navigation_style{
+padding-top: 15px;
+float: right;
+}
+
+.navigation_style li{
+	display: inline;
+	text-decoration: none;
+	list-style: none;
+}
+
+.navigation_style a{
+text-decoration: none;
+color: grey;
+}
+
+.navigation_style a:hover{
+	color:black;
+}
+
+.banner{
+ background-color: #ff3333;
+ height: 140px;
+}
+
+.banner h2{
+	padding-top: 80px;
+}
+
+.col_back{
+background-color: #DCDCDC;
+height: 200px;
+}
+
+.image_space{
+	padding-top: 50px;
+}
+
+.content_space{
+	padding-top: 20px;
+}
+
+.content_space p{
+	margin-bottom: 0px;
+	text-align: justify;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 15px;
+	color: #666666;
+}
+
+.main_element{
+	background-color: #ff3333;
+	width:100%;
+	margin-top:50px;
+}
+
+.main_element h2{
+	font-size: 30px;
+}
+
+.main_element p{
+	padding: 0px 210px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color:#FFFFE0;
+}
+
+.hero_element_space{
+	padding-left: 520px;
+	padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+section p{
+	margin:10px 0px;
+	letter-spacing: 0.2px;
+}
+
+section h2{
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+
+.foot {
+	background-color: #737373;
+	height:70px;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	width:100%;
+}
+
+.footer_aligment a{
+text-decoration: none;
+color: black;
+}
+
+.footer_aligment a:hover{
+	color:white;
+}
+
+.footer_aligment p:first-child{
+	padding-top: 10px;
+	margin-bottom: 0px;
+	width:500px;
+}
+
+.footer_aligment p:nth-child(2){
+	margin-bottom: 0px;
+	padding-top: 2px;
+	width:500px;
+}
+
+.footer_aligment p:last-child{
+	float: right;
+	margin-bottom: 0px;
+}
+

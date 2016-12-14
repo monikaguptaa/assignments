@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+
+     <script type="text/javascript">  /* script type is included in older version   */ 
+     	function myFunction() {
+             document.getElementById('change_image').src='img/after.png';
+     	}
+     </script>
+  </head>
+  <body>
+    <h4 id="change_text">when pressing the button, text will be change</h4>
+    <button type="button" onclick="document.getElementById('change_text').innerHTML='I am changed'">Click Me</button>
+
+    <h5>example to change image source</h5>
+    <button type="button" onclick="document.getElementById('change_image').src='img/before.png'">Image color change</button>
+    <img id="change_image" src="img/after.png"></img>
+    <button type="button" onclick="myFunction()">Image color change</button>
+  </body>
+</html>
