@@ -25,7 +25,7 @@
                          <input ng-model="searchTerm" placeholder="Find Movie,series etc">
                 </md-input-container>
                 <!-- <a sref="#/search"><md-button class="md-raised md-primary" ng-click="search(searchTerm)">Search</md-button></a> -->
-                <a href="#/search"><md-button class="md-raised md-primary">Search</md-button></a>
+                <md-button ng-href="#/search/{{searchTerm}}" class="md-raised md-primary" >Search</md-button>
             </div>
 			
 
@@ -65,7 +65,7 @@
 <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-messages/angular-messages.min.js"></script>
-<script type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
+<script  type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
 
 
 
@@ -80,4 +80,4 @@
 
 <!--   amgular material libraries -->
 
-</html>
+</html>   

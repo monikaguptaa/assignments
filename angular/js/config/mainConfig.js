@@ -2,7 +2,7 @@ angular.module('searchApp')
        .config(function ($routeProvider) {
             console.log("inconfig");
              $routeProvider
-               .when('/search',{
+               .when('/search/:search_name',{
                	 templateUrl: "templates/search.html",
                	 controller: "searchController"
                })
