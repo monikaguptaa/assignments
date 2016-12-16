@@ -1,0 +1,24 @@
+{
+  "name": "angularUiRouterExample1",
+  "homepage": "https://github.com/monikaguptaa/assignments",
+  "authors": [
+    "monikaguptaa <monika9nice@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.2",
+    "angular": "^1.6.0",
+    "angular-material": "^1.1.1",
+    "angularUtils-pagination": "angular-utils-pagination#^0.11.1",
+    "bootstrap": "^3.3.7"
+  }
+}

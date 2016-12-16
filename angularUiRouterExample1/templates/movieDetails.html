@@ -1,0 +1,83 @@
+
+
+  <md-content class="md-padding full-movie-info-boxResizer" style="background-color:#D0D5C7;">
+      <md-card >
+         <md-toolbar class="md-theme-light md-warn md-hue-3 ">
+             <div class="md-toolbar-tools" layout="" layout-align="space-between center">
+                 <div></div>
+                 <h2 class="md-flex">{{movie.Title}}</h2>
+                 <md-button class="md-raised md-primary" ui-sref="back({name: searchName})">Back</a>
+             </div>
+         </md-toolbar>
+         <div class="full-movie-info-innerBox">
+          <div layout="row" >
+          <div flex="50">
+              <img ng-src="{{movie.Poster != 'N/A' ? movie.Poster : 'https://www.makeupgeek.com/content/wp-content/themes/makeupgeek/images/placeholder-square.svg'}}" alt="{{movie.Title}}" class="image-sizer" />
+              </div>
+              <div flex="50">
+                  <div layout="row" layout-wrap layout-padding>
+                        <div flex="50" layout-padding>Type:</div>
+                        <div flex="50" layout-padding>{{movie.Type}}</div>
+                        <div flex="50" layout-padding>Year:</div>
+                        <div flex="50" layout-padding>{{movie.Year}}</div>
+                        <div flex="50" layout-padding>Released:</div>
+                        <div flex="50" layout-padding>{{movie.Released}}</div>
+                        <div flex="50" layout-padding>MovieRuntime:</div>
+                        <div flex="50" layout-padding>{{movie.Runtime}}</div>
+                        <div flex="50" layout-padding>Imdb Rating:</div>
+                        <div flex="50" layout-padding>{{movie.imdbRating}}%</div>
+                        <div flex="50" layout-padding>Genre:</div>
+                        <div flex="50" layout-padding>{{movie.Genre}}</div>
+                        <div flex="50" layout-padding>Rating:</div>
+                        <div flex="50" layout-padding>{{movie.Rated}}</div>
+                        </div>		              
+                  </div>
+              </div>
+
+              <md-divider></md-divider>
+          
+              <div layout="row">
+                  <md-card flex="33">
+                       <md-toolbar class="md-theme-light md-warn md-hue-3 ">
+                          <div class="md-toolbar-tools">
+                              <h6 class="md-flex">Directors</h6>
+                          </div>
+                       </md-toolbar>
+                       <div layout-padding layout="" layout-align="center center">
+                       {{movie.Director}}
+                       </div>
+                  </md-card>
+         
+                  <md-card flex="33">
+                       <md-toolbar class="md-theme-light md-warn md-hue-3">
+                           <div class="md-toolbar-tools">
+                                <h6 class="md-flex">Writer</h6>
+                           </div>
+                       </md-toolbar>
+                       <div layout-padding layout="" layout-align="center center">
+                        {{movie.Writer}}
+                        </div>
+                  </md-card>
+
+                  <md-card flex="33">
+                       <md-toolbar class="md-theme-light md-warn md-hue-3">
+                           <div class="md-toolbar-tools">
+                                <h6 class="md-flex">Actors </h6>
+                           </div>
+                       </md-toolbar>
+                       <div layout-padding layout="" layout-align="center center">
+                       {{movie.Actors}}
+                       </div>
+                  </md-card>
+               </div>            
+
+
+		          <md-divider></md-divider>
+
+		          <div class="description-color" >
+		              <h4>Synopsis</h4>
+		              <div>{{movie.Plot}}</div>
+		          </div>
+         </div>
+      </md-card>
+</md-content>

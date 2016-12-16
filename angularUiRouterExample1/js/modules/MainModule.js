@@ -1,0 +1,1 @@
+angular.module('searchApp', ['ngMaterial','ui.router','angularUtils.directives.dirPagination']);

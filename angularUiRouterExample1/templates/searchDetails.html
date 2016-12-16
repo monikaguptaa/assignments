@@ -1,0 +1,43 @@
+
+             <md-content class="md-padding" style="background-color:#D0D5C7;">
+                    <div layout="row" layout-wrap layout-align="center center"> 
+                    <!--layout="column" layout-align="center center" -->
+                      	<!--<div flex="30" ng-repeat="movieResult in viewResult"> --> 
+                      	<div flex="30" dir-paginate="movieResult in resultData | itemsPerPage : pagination.perPage" total-items="pagination.total" current-page="pagination.currentPage">
+	                        <md-card >
+	                        <!-- <md-card-title-media flex="100">
+										<div class="md-media-xl card-media"> -->
+											<img ng-src="{{movieResult.Poster != 'N/A' ? movieResult.Poster : 'https://www.makeupgeek.com/content/wp-content/themes/makeupgeek/images/placeholder-square.svg'}}" alt="{{movieResult.Title}}" class="image-sizer" />
+
+								<!--		</div>
+									</md-card-title-media> -->
+						        <md-card-title>
+						           
+									<md-card-title-text >
+									    <div layout="row" layout-align="center center">
+										    <span class="md-headline">{{movieResult.Title}}</span>
+									    </div>
+										<div layout="column" layout-align="space-around start">
+									        <span class="md-subhead">{{movieResult.Type}}</span>
+									        <span class="md-subhead">{{movieResult.Year}}</span>
+									    </div>
+									</md-card-title-text>
+									
+						        </md-card-title>
+						      <!--  <div>
+						           <a href="#/details/{{movieResult.imdbID}}" >
+                                     
+                                         Read More</a>
+                                </div> -->
+                                
+						        <md-card-actions layout="row">
+									<!--<a href="#/details/{{movieResult.imdbID}}" > --><md-button class="md-raised md-primary button-resizer" ui-sref="readMore({id: movieResult.imdbID})"-->Read More</md-button><!--</a>-->
+						        </md-card-actions> 
+					      	</md-card>
+                        </div>
+
+                    </div>
+                    <dir-pagination-controls on-page-change="pageChanged(newPageNumber)"></dir-pagination-controls>
+             </md-content>
+
+             
